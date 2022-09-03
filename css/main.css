@@ -12,6 +12,14 @@
     --dark_rose: rgb(225 29 72);
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--light_pink);
+}
+
 * {
     box-sizing: border-box;
     margin: 0 auto;
