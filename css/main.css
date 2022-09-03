@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --black: #222;
+    --lighter_pink: rgb(252 231 243);
+    --light_pink: rgb(244 114 182);
+    --light_rose: rgb(251 113 133);
+    --dark_pink: rgb(219 39 119);
+    --dark_rose: rgb(225 29 72);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+footer {
+    background-color: var(--lighter_pink);
+    padding: 10px;
+    pointer-events: none;
+    text-align: center;
+    user-select: none;
+}
+
+footer h2 {
+    font-size: 0.600rem;
+    font-weight: 400;
+    letter-spacing: 0.250rem;
+}
+
+main {
+    max-width: 1366px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 0.875rem;
+    margin-top: 15px;
+}
+
+ul li a {
+    color: var(--light_rose);
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: var(--dark_rose);
+    text-decoration: underline;
+}
+
+.hero-container {
+    height: 100vh;
+    position: relative;
+}
+
+.hero-wrapper {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-content h1 {
+    font-size: 7rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 span {
+    color: var(--light_pink);
+    text-decoration: underline;
+}
+
+.hero-content h2 {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: left;
+}
+
+.hero-content p {
+    margin-top: 25px;
+    text-align: left;
+}
+
+.hero-content a {
+    background-color: var(--light_rose);
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+.hero-content a:active {
+    background-color: var(--dark_rose);
+}
+
+.main-container {
+    background-color: #eee;
+}
+
+.main-wrapper {
+    padding: 100px 50px;
+}
+
+.main-heading {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0.500rem;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.pink {
+    color: var(--dark_pink);
+}
+
+.grid {
+    display: grid;
+    grid-gap: 15px;
+}
+
+.cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.sub-heading {
+    color: rgba(0, 0, 0, 0.4);
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.rose {
+    color: var(--dark_pink);
+    font-weight: 600;
+}
+
+.list-top-gap {
+    margin-top: 25px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1068px) {
+    .hero-content h1 {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    ul li {
+        font-size: 0.600rem;
+        margin-top: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 0.875rem;
+        text-align: center;
+    }
+
+    .hero-content a {
+        text-align: center;
+        width: 100%;
+    }
+
+    .main-wrapper {
+        padding: 25px 15px;
+    }
+
+    .cols-3 div, .cols-4 div {
+        width: 100%;
+    }
+
+    .cols-4 {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .main-heading {
+        font-size: 0.9rem;
+        letter-spacing: initial;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .cols-3 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
