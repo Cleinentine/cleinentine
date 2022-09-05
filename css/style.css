@@ -8,6 +8,15 @@
     --headingFont: 'Roboto Mono', sans-serif;
 }
 
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--darkPink);
+}
+
 a {
     color: var(--lightPink);
     display: inline-block;
@@ -30,6 +39,8 @@ body, html {
     background-color: #eee;
     font-family: 'Nunito', sans-serif;
     scroll-behavior: smooth;
+    scrollbar-color: var(--darkPink);
+    scrollbar-width: 4px;
 }
 
 footer {
