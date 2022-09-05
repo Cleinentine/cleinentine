@@ -190,6 +190,10 @@ footer h2 {
         padding: 100px 50px;
     }
 
+    .grid div {
+        width: initial;
+    }
+
     .cols-4 {
         grid-template-columns: repeat(4, 1fr);
     }
